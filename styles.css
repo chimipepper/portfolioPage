@@ -1,0 +1,177 @@
+/*html {*/
+/*	height: 100%;*/
+/*	min-height: 100%;*/
+/*}*/
+body {
+    background: url('https://source.unsplash.com/FIKD9t5_5zQ');
+    background-size: cover;
+    position: relative;
+    margin: 0px;
+	min-height: 100%;
+}
+.wrapper {
+      min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+#allContent {
+  
+    background-color:black;
+}
+.navbar .container-fluid {
+    background-color: white;
+    height: 100%;
+}
+
+.navbar-header a i {
+    margin-top: 25px;
+    font-size: 23px;
+    margin-left: 10px;
+    color:black;
+}
+.navbar-header a i:hover {
+    color:blue;
+}
+.navbar .navbar-header .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    margin-top: 8px;
+}
+
+.navbar {
+    height: 67px;
+    background-color: white;
+}
+
+.navbar-nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    background-color: white;
+}
+
+.navbar-nav li {
+    margin-top: 15px;
+    z-index: 3;
+    margin: 0px;
+    background-color: white;
+}
+
+.collapse i {
+    color: black;
+}
+
+
+
+#aboutMe {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    margin-top: -19px;
+
+     text-shadow: 1px 1px 1px #000000;
+}
+
+#rightSide {
+    border: solid;
+    background-color: pink;
+}
+
+#leftSide {
+    text-align:right;
+    border: solid;
+    background-color: lightgreen;
+}
+
+#rightSide img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutMe h1 {
+    color: lightgray;
+     text-align: center;
+}
+
+#leftSide p {
+    font-size: 22px;
+    color: white;
+}
+
+#logos {
+    border-style: solid;
+    border-color:black;
+    background-color: lightblue;
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+     text-shadow: 1px 1px 1px #000000;
+}
+
+#logos img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#logos .col-xs-12 {
+    text-align: center;
+}
+
+#resume {
+    border-style:solid;
+    border-color:black;
+    background-color: lightyellow;
+    width:80%;
+    color:gray;
+     font-family: 'Oswald', sans-serif;
+
+}
+#resume p {
+    font-size:19px;
+}
+#skillsFE {
+    margin-left:30px;
+}
+#resume span {
+    color:black;
+    font-size:22px;
+}
+
+#experience p {
+    margin-left:30px;
+    font-size:19px;
+}
+#experience span {
+    margin-left:-30px;
+    font-size:22px;
+}
+
+
+
+
+
+
+
+
+
+
+#footer {
+    border-style: solid;
+    border-color: black;
+    background-color: violet;
+    width: 100%;
+    min-height: 100px;
+    bottom: 0px;
+     text-shadow: 1px 1px 1px #000000;
+     font-size:20px;
+     color:white;
+     text-align:center;
+      font-family: 'Oswald', sans-serif;
+}

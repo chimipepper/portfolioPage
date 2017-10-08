@@ -1,0 +1,92 @@
+<html ng-app="portfolio">
+
+<head >
+    <title>Bootstrap Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="app/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body ng-controller="portfolioController">
+    <div class="wrapper">
+        <nav ng-include="'views/header.html'"></nav>
+
+<div id="allContent"class="container">
+        <!--About ME-->
+        <div id="aboutMe" class="container">
+            <h1>About Me</h1>
+            <div class="row">
+                <div id="leftSide" class="col-md-6 col-sm-6 col-xs-12">
+                    <p>Hi! My name is Julie </p>
+                    <br>
+                    <p>I am a self-taught front end developer located in Silver Spring, MD. Currently, I am looking for full time web development opportunities to help me continue in my coding journey. </p>
+                </div>
+                <div id="rightSide" class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/IMG_4630.JPG">
+                </div>
+
+            </div>
+        </div>
+        <!--end of about me-->
+        <div id="logos" class="container">
+            <div id="languages">
+                <p>I currently work with the following</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/angular-js.sh.png"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/bootstrap-logo.png"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/css3.png"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/HTML_Logo.png"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/jQurery.gif"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="img/js.sh.png"></div>
+            </div>
+        </div>
+<!--end of logos-->
+<div id="resume" class="container">
+    <h1>Skills</h1>
+    <p><span>Programming:</span>
+        <div id="skillsFE">
+            <p>Front End:HTML5, CSS3, JavaScript, JQuery, Bootstrap, AngularJS, AJAX, REST</p>
+            <p>Backend: Basic Node and Express for creating REST APIs</p>
+            <p>Misc: Wordpress CMS, Microsoft Office Suite, Sass</p>
+        </div>
+        <p><span>Administrative:</span> Invoice processing, receptionist and web administration </p>
+        <p><span>Interpersonal:</span> Ability to work well in teams and efficient at time management</p>
+        <p><span>Language:</span> Spanish (intermediate), Korean (intermediate)</p>
+        <div id="experience">
+            <h1>Experience</h1>
+            <p><span>Instructor, Boolean Girls Camp (June 2017-August 2017)</span></p>
+            <p>Instructed adolescent children the basics of object oriented fundamentals through the creation of individual projects</p>
+            <p><span>Administrative Assistant, Fidelity Mechanical Services (March 2016-May 2017)</span></p>
+            <p> Managed administrative duties for the branch to ensure communication between departments and customers was efficient
+                <p>Performed invoice processing for company project transactions and acted as a liaison between the branch and accounts payable located in the main headquarters </p>
+                <p><span>Residential Hall Desk Staff, University of Maryland, Baltimore County(August 2012-December 2013)</span></p>
+                <p>Operated front desk responsibilities for on-campus residential halls to maintain organization and uphold Residential Life policies </p>
+                <p>Assisted residents with housing concerns and safety, and provided an overall welcoming atmosphere for students</p>
+                <p>Learned to manage academic priorities with Desk Staff duties, along with personal activities</p>
+        </div>
+        <!--end of experience -->
+        <h1>Education</h1><br>
+        <p>University of Maryland, Baltimore County</p>
+        <p>December 2017-B.S. in Financial Economics with a certificate in Accounting</p>
+</div>
+<!--end of resume-->
+        </div><!--end of allContent-->
+        </div><!--end of wrapper-->
+        <div id="footer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <p>jlee028@gmail.com</p>
+            <p>443.695.0282</p>
+
+        </div>
+</body>
+
+</html>
