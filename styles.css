@@ -1,23 +1,17 @@
-/*html {*/
-/*	height: 100%;*/
-/*	min-height: 100%;*/
-/*}*/
 body {
-    background: url('https://source.unsplash.com/FIKD9t5_5zQ');
+    background: -webkit-linear-gradient(#47B9EE, #56BBE9);
     background-size: cover;
     position: relative;
     margin: 0px;
-	min-height: 100%;
+    min-height: 100%;
 }
+
 .wrapper {
-      min-height: 100%;
+    min-height: 100%;
     margin-bottom: -100px;
     padding-bottom: 100px;
 }
-#allContent {
-  
-    background-color:black;
-}
+/*=========================================================================NAVBAR===================================================================================================*/
 .navbar .container-fluid {
     background-color: white;
     height: 100%;
@@ -27,11 +21,9 @@ body {
     margin-top: 25px;
     font-size: 23px;
     margin-left: 10px;
-    color:black;
+    color: black;
 }
-.navbar-header a i:hover {
-    color:blue;
-}
+
 .navbar .navbar-header .navbar-brand {
     font-family: 'Oswald', sans-serif;
     font-size: 34px;
@@ -44,6 +36,7 @@ body {
 }
 
 .navbar-nav {
+    z-index: 3;
     font-family: 'Oswald', sans-serif;
     font-size: 19px;
     background-color: white;
@@ -54,54 +47,90 @@ body {
     z-index: 3;
     margin: 0px;
     background-color: white;
+    font-size: 18px;
 }
 
 .collapse i {
     color: black;
 }
+/*=========================================================================END OF NAVBAR===================================================================================================*/
 
+/*=========================================================================ABOUT ME==================================================================================================*/
 
+#aboutMe hr {
+    width: 100%;
+}
 
 #aboutMe {
-    width: 100%;
+    width: 65%;
     font-family: 'Oswald', sans-serif;
-    margin-top: -19px;
+    margin-top: 19px;
+    padding-left: 75px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
-     text-shadow: 1px 1px 1px #000000;
+#aboutMeHeader {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#aboutMeHeader+h1 {
+    color: #3D3535;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 #rightSide {
-    border: solid;
-    background-color: pink;
+    padding: 20px;
+}
+
+#leftside .hi {
+    margin: auto;
+    text-align: center;
+    color: #5D5D5D;
 }
 
 #leftSide {
-    text-align:right;
-    border: solid;
-    background-color: lightgreen;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: right;
+    min-height: 320px;
+    padding-left: 10px;
 }
 
+/*fix the awkward breaks*/
+
 #rightSide img {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15%;
     margin-right: auto;
 }
 
-#aboutMe h1 {
-    color: lightgray;
-     text-align: center;
+@media only screen and (max-width: 767px) {
+    #rightSide img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    #leftside {
+        text-align: center;
+    }
 }
 
 #leftSide p {
     font-size: 22px;
-    color: white;
+    color: #3D3535;
 }
 
 #logos {
-    border-style: solid;
-    border-color:black;
-    background-color: lightblue;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
@@ -111,7 +140,6 @@ body {
     font-size: 22px;
     color: white;
     text-align: center;
-     text-shadow: 1px 1px 1px #000000;
 }
 
 #logos img {
@@ -125,53 +153,678 @@ body {
 }
 
 #resume {
-    border-style:solid;
-    border-color:black;
-    background-color: lightyellow;
-    width:80%;
-    color:gray;
-     font-family: 'Oswald', sans-serif;
+    padding-left: 35px;
+    padding-right: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 80%;
+    color: #3D3535;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
 
+@media only screen and (max-width: 767px) {
+    #resume {
+        max-height: 500px;
+        overflow-y: scroll;
+        width: 98%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
+
+#resume h1 {
+    color: white;
+}
+
 #resume p {
-    font-size:19px;
+    font-size: 19px;
 }
+
 #skillsFE {
-    margin-left:30px;
+    margin-left: 30px;
 }
+
 #resume span {
-    color:black;
-    font-size:22px;
+    color: black;
+    font-size: 22px;
 }
 
 #experience p {
-    margin-left:30px;
-    font-size:19px;
+    margin-left: 30px;
+    font-size: 19px;
 }
+
 #experience span {
-    margin-left:-30px;
-    font-size:22px;
+    margin-left: -30px;
+    font-size: 22px;
+}
+
+.box {
+    width: 100px;
+}
+/*========================================================================= END OF ABOUT ME=========================================================================================*/
+
+/*=========================================================================IMAGE GALLERY=============================================================================================*/
+#photogall {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-top: 28px;
+}
+
+#description {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #3D3535;
+    font-size: 21px;
+}
+
+.container {
+    margin-top: 50px;
+}
+.container .row .img-thumbnail {
+    padding: 0px;
+    max-height: 350px;
+    min-height: 350px;
+    width: 100%;
+    margin-bottom: 6px;
+    margin-left: 0px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    box-shadow: -10px 10px 7px -5px gray;
+}
+
+.container .row .img-thumbnail:hover {
+    box-shadow: -10px 10px 7px -2px #2C2C2C;
+}
+
+.modal-caption p {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.modal-content button {
+    margin: 7px;
+}
+
+.modal-dialog img {
+    width: 100%;
+}
+/*==================================================================END OF IMAGE GALLERY=============================================================================================*/
+
+/*====================================================================RANDOM QUOTE GENERATOR=========================================================================================*/
+#randomQuoteGen {
+    color: white;
+    background-color: black;
+    /*margin-top: 10%;*/
+    text-align: center;
+    padding: 80px;
+}
+
+#randomQuoteGen h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 55px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+#randomQuoteGen .btn {
+    margin-bottom: 10px;
+    /*margin-top: 50px;*/
+    border-style: none;
+    border-radius: 50px;
+}
+
+#quote {
+    max-height: 300px;
+    max-width: 500px;
+    min-height: 200px;
+    min-width: 500px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 414px) {
+    #randomQuoteGen {
+        padding: 0px;
+        margin: auto;
+    }
+    #quote {
+        width: 200px;
+        min-height: 250px;
+        min-width: 250px;
+        height: auto;
+    }
+}
+
+#quote p {
+    margin: 10px;
+    font-size: 1em;
+}
+
+#author p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#randomQuoteGen i {
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+/*===================================================================END OF RANDOM QUOTE GENERATOR==========================================================================*/
+
+/*==========================================================================WIKIPAGE==================================================================================================*/
+.results {
+    border-width:5px;
+    border-style: outset;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    background-color: #282828;
+        /*box-shadow: -10px 10px 1px  black;*/
+        /* background: rgba(255, 255, 255, 0.3)*/
+}
+
+.results:hover {
+         box-shadow: inset 0 0 30px #000000;
+}
+.results h1 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #EEF2A9;
+        text-shadow: 2px 2px black;
+}
+
+.results p {
+    font-size: 15px;
+    color: #C3C3D9;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #EEF2A9;
+    text-shadow: 2px 2px black;
+}
+
+#inputArea {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #797972;
+    background-color: #282828;
+    max-height: 100%;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#inputArea input {
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #D68517;
+    font-family: 'Roboto Slab', serif;
+}
+
+#inputArea ul {
+    padding: 0px;
+    width: 70%;
+    margin: auto;
+}
+
+#inputArea .img-responsive {
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 150px;
+}
+
+#inputArea .col-sm-12 ul {
+    width: 100%;
+}
+
+#inputArea .button {
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #D68517;
+    padding: 7px;
+    margin-left: -19px;
+    color: black;
+    background-color: lightgray;
+    font-size: 13px;
+}
+#inputArea i:hover {
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 414px) {
+    #inputArea {
+        margin: auto;
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    #inputArea {
+        margin: auto;
+
+    }
+}
+
+/*==========================================================================END OF WIKIPAGE==================================================================================================*/
+
+/*===========================================================================DOG PEN PAGE=========================================================================================*/
+#dogPen {
+    /*background: url('https://source.unsplash.com/Ys85uMksDHc');*/
+    /*position: relative;*/
+    background-size: cover;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#dogPen h1 {
+    font-size: 40px;
+}
+
+#dogPen i {
+    font-size: 40px;
+}
+
+#dogPen p {
+    font-size: 20px;
+}
+
+#dogPen input {
+    width: 250px;
+    height: 30px;
+    padding: 6px;
+    font-size: 18px;
+}
+
+#input {
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    padding-right: 30px;
+}
+
+#input p {
+    font-size: 25px;
+}
+
+#dogPen button {
+    border-style: none;
+    font-size: 28px;
+    margin: 10px;
+}
+
+#input h1 {
+    font-size: 30px;
+}
+
+#pen {
+    border-radius: 10%;
+    height: 616px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-height: 616px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#pen h1 {
+    font-size: 30px;
+}
+
+#pen li {
+    border-radius: 30px;
+    width: 100%;
+    border-style: solid;
+    border-color: gray;
+    max-height: 150px;
+    list-style: none;
+    text-align: center;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 6px;
+}
+
+#pen li:hover {
+    border-color: black;
+}
+
+#pen .dogName {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#pen img {
+    margin-right: 70px;
+    height: 100px;
+    float: right;
+    width: 100px;
+    margin-top: 0px;
+}
+
+#pen .remove p {
+    box-shadow: 6px 4px 5px #888888;
+    float: right;
+    margin-top: 35px;
+    margin-right: 15px;
+    background: #fff;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    color: red;
+    cursor: pointer;
+    /*margin-left: 10px;*/
+}
+
+#image {
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    -o-object-fit: cover;
+
+}
+
+#image img {
+    border-radius: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 350px;
+    min-width: 350px;
+    margin: 0 auto
+}
+
+/*=======================================================================END OF DOG PEN PAGE=========================================================================================*/
+
+/*=======================================================================CONTACT PAGE================================================================================================*/
+#contactPagehtml {
+    margin-top: -30px;
+    font-family: 'Oswald', sans-serif;
+    padding: 45px;
+}
+
+#contactform {
+    color: white;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 28px;
+}
+
+/*chooses element right after #contactform*/
+#contactform+h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+}
+
+#contactPagehtml h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container .cpform {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.container .cpPreview {
+    height: 300px;
+
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#message {
+    padding: 0px;
+    max-height: 200px;
+    width: 500px;
+    height: 200px;
+}
+
+.form-inline {
+    padding: 15px;
+}
+/*====================================================================END OF CONTACT PAGE===========================================================================================*/
+
+/*====================================================================ALL PROJECTS PAGE==============================================================================================*/
+
+#allProjectsHtml {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 70%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#allProjectsHeader {
+    color: white;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+#allProjectsHeader+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+#allProjectsHeader+h1+p {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+#allProjectsHtml .img-thumbnail {
+    margin: auto;
+    max-width: 700px;
+    max-height: 200px;
+    box-shadow: none;
+    padding: 0px;
+    border-style: solid;
+    border-width: 7px;
+}
+
+#allProjectsHtml .img-thumbnail:hover {
+    border-color: #65696D;
+    box-shadow: none;
+}
+
+#allProjectsHtml .col-md-12 {
+    margin: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+
+#allProjectsHtml .col-md-12 h1 {
+    color: white;
+    font-size: 30px;
+}
+
+#allProjectsHtml .col-md-12 p {
+    font-size: 20px;
+}
+
+#allProjectsHtml .col-md-12 img {
+    margin: auto;
+}
+
+/*=================================================================END OF ALL PROJECTS PAGE ===================================================================================================*/
+
+/*=======================================================================TO  DO LIST============================================================================================= */
+
+#toDoListhtml {
+    font-family: Helvetica;
+    margin: 50px;
+}
+
+#toDoListhtml h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
 }
 
 
+#toDoListhtml {
+    background: #3E434D;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Special Elite', cursive;
+}
 
+#toDoListhtml h1 {
+    color: white;
+}
 
+.content {
+    padding: 20px;
+}
 
+.content p {
+    float: right;
+    margin-left: 20px;
+}
 
+.content button,
+.content input[type="submit"] {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.1);
+    font-size: 16px;
+}
 
+.content button:nth-child(2) {
+    float: right;
+}
 
+.content ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 30px 0;
+}
 
+.content li {
+    padding: 15px 0;
+    border-top: 1px solid #e2e2e2;
+    color: white;
+}
+
+.content li span {
+    float: right;
+}
+
+.content li h3 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.content input {
+
+    width: 70%;
+    padding: 10px 5%;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+
+    margin-bottom: 10px;
+}
+
+.content input[type="submit"] {
+    width: 150px;
+    display: block;
+    margin: 15px auto;
+    color: gray;
+}
+
+.content input[type="checkbox"] {}
+
+#toDoListhtml input[type="checkbox"] p {
+    color: pink;
+}
+
+.remove {
+    float: right;
+    padding: 5px;
+    background: #fff;
+    width: 18px;
+    text-align: center;
+    border-radius: 20px;
+    color: crimson;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*======================================================================END OF TO DO LIST=========================================================================================*/
+
+/*===========================================================================FOOTER================================================================================================*/
 
 #footer {
-    border-style: solid;
-    border-color: black;
-    background-color: violet;
+    background-color: white;
     width: 100%;
     min-height: 100px;
     bottom: 0px;
-     text-shadow: 1px 1px 1px #000000;
-     font-size:20px;
-     color:white;
-     text-align:center;
-      font-family: 'Oswald', sans-serif;
+    /*text-shadow: 1px 1px 1px #000000;*/
+    font-size: 20px;
+    color: #414141;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 13px;
 }
+
+#footer i {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+#footer i:hover {
+    color: lightgray;
+}
+/*======================================================================END OF FOOTER================================================================================================*/
+
+/*=======================================================================SCROLL TO TOP===============================================================================================*/
+.scrollToTop {
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.scrollToTop:hover {
+    cursor: pointer;
+    color: black;
+}
+/*================================================================END OF SCROLL TO TOP===============================================================================================*/

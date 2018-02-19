@@ -1,0 +1,24 @@
+<div id="randomQuoteGen" class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-controller="randomQuoteGeneratorController">
+            <h1>Life Quotes</h1>
+            <hr>
+            <div class="well-lg" id="quote">{{myWelcome.quote}}</div>
+            <br>
+            <br>
+            <br>
+            <div id="author">
+                <p>{{myWelcome.author}}</p>
+            </div>
+            <br>
+            <button ng-click="getQuote()" type="button" class="btn btn-info">New Quote</button>
+            <a href="" ng-click="tweetQuote()"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div><!--end of col div-->
+    </div><!--end of row-->
+</div><!--end of randomQuoteGen container-->
+
+<!--Scroll to Top-->
+<div class="scrollToTop" ng-click="topFunction()">
+    <i class="fa fa-angle-up" aria-hidden="true" ng-click></i>
+    <p>Back to Top</p>
+</div><!--end of Scroll to Top-->

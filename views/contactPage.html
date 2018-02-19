@@ -1,0 +1,49 @@
+<h1 id="contactform">Contact Page</h1>
+<h1>If you would like to send me a message, fill out the form below!</h1>
+<div id="contactPagehtml" class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 cpform">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="name" class="form-control" id="firstName" ng-model="firstNameInput">
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="namelast" class="form-control" id="lastName" ng-model="lastNameInput">
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="form-control" id="emailAddress" ng-model="emailAddressInput">
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <input type="text" class="form-control" id="message" ng-model="messageInput">
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div> <!--end of form div-->
+        <div class="col-md-4 col-sm-12 col-xs-12 cpPreview">
+            <b><div class="cpPreviewHeader">This is what your message will look like:</div><hr></b>
+            <div class="cpPreviewContent">
+                <p>You have received a message from: {{firstNameInput}} {{lastNameInput}}</p>
+                <p>You can contact them at: {{emailAddressInput}}</p>
+                <p>Message: {{messageInput}}</p>
+            </div>
+        </div><!--end of form preview div-->
+    </div><!--end of row-->
+</div><!--end of contactPagehtml container-->
+
+<!--Scroll to Top-->
+<div class="scrollToTop" ng-click="topFunction()">
+    <i class="fa fa-angle-up" aria-hidden="true" ng-click></i>
+    <p>Back to Top</p>
+</div><!--end of Scroll to Top-->

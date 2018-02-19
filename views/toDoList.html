@@ -1,0 +1,29 @@
+<div id="toDoListhtml" class="content">
+    <div ng-controller="toDoListController">
+        <h1>To Do List</h1>
+        <ul>
+            <li ng-repeat="x in toDos">
+                <h3>{{x.errand}}</h3>
+                <p>{{x.time}}</p>
+                <div class="remove" ng-click="removeErrand(x)">x</div>
+            </li>
+        </ul><!--end of to do list-->
+        <form ng-submit="addErrand()">
+            <!--when clicked, angular will look for this directive on form element and fire function that's in the controller (adderrand)-->
+            <input type="text" placeholder="errand" ng-model="newerrand.errand" />
+            <!--storing input into new object called newerrand into errand property-->
+            <input type="text" placeholder="time" ng-model="newerrand.time" />
+            <!--once stored, now can be accessed in the js controller-->
+            
+            <!--<input type="checkbox" name="vehicle" value="am" ><p>am</p><br>-->
+            <!--<input type="checkbox" name="vehicle" value="pm"><p>pm</p>-->
+            <input type="submit" value="Add New To Do" /><br>
+        </form><!--end of Add Errand form-->
+    </div>
+</div><!--end of toDoListhtml-->
+
+<!--Scroll to Top-->
+<div class="scrollToTop" ng-click="topFunction()">
+    <i class="fa fa-angle-up" aria-hidden="true" ng-click></i>
+    <p>Back to Top</p>
+</div><!--end of Scroll to Top-->

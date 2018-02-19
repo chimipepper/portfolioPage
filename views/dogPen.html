@@ -1,0 +1,34 @@
+<div id="dogPen" class="container">
+    <h1>Doggy Wish List</h1><i class="fa fa-paw" aria-hidden="true"></i>
+    <p>Make a list of all your future dogs!</p>
+    <div class="row">
+        <div id="input" class="col-sm-6 col-md-6 col-xs-12">
+            <h1>1.Choose your Dog</h1>
+            <div id="image"><img class="img-responsive" src={{dogPic.message}}></div>
+            <br>
+            <p>2. Give your dog a name!</p><input type="text" ng-model="dogName" placeholder="Type Name Here">
+            <br>
+            <br>
+            <button type="button" ng-click="addToPen(dogName)">Add to Pen</button>
+            <button type="button" ng-click="dogSearch()">Next Dog</button>
+            <br>
+            <br>
+        </div> <!--end of input div-->
+        <div id="pen" class="col-sm-6 col-md-6  col-xs-12">
+            <h1>3. Edit your doggy wish list!</h1>
+            <ul>
+                <li ng-repeat="dog in myDogs">
+                    <span class="dogName">{{dog.name}}</span>
+                    <span class="remove" ng-click="removeDog(x)"><p>X</p></span>
+                    <img src="{{dog.picture}}">
+                </li>
+            </ul>
+        </div><!--end of pen div-->
+    </div><!--end of row-->
+</div><!--end of dogPen container-->
+
+<!--Scroll to Top-->
+<div class="scrollToTop" ng-click="topFunction()">
+    <i class="fa fa-angle-up" aria-hidden="true" ng-click></i>
+    <p>Back to Top</p>
+</div><!--end of Scroll to Top-->
